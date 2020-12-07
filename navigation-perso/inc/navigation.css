@@ -1,0 +1,16 @@
+.menu-menu-principal-container{
+    position: absolute;
+
+    z-index: 9998;
+
+    right: 0;
+}
+
+.menu-burger{
+    position: absolute;
+
+    right: 0;
+    top: 0;
+
+    z-index: 9999;
+}

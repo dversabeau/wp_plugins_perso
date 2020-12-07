@@ -11,10 +11,10 @@ Author URI: https://www.dan-alexandre-developpement.fr
 /*
  * Navigation sous forme de shortcode
  */
-function menu_mobile_right() {
+function navigation_menu() {
     ?>
 
-        <div class="menu-burger">
+        <div id="nav-button" class="menu-burger">
             <img src="<?php bloginfo('template_directory' ); ?>/images/burger-black.png" alt="">
         </div>
 
@@ -23,14 +23,15 @@ function menu_mobile_right() {
                 array(
                     'theme_location' => 'menu-1',
                     'menu_id'        => 'primary-menu',
-                    'menu'           => 'Menu principal'
+                    'menu'           => 'Menu principal',
+                    'container_id'   => 'menu-container'
                 )
             );
         ?>
 
     <?php
 }
-add_shortcode('menu_mobile_right', 'menu_mobile_right');
+add_shortcode('navigation', 'navigation_menu');
 
 
 /*

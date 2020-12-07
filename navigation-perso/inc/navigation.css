@@ -1,16 +1,52 @@
-.menu-menu-principal-container{
-    position: absolute;
-
-    z-index: 9998;
-
-    right: 0;
-}
-
 .menu-burger{
-    position: absolute;
+    position: fixed;
 
     right: 0;
     top: 0;
 
     z-index: 9999;
+
+    cursor: pointer;
+}
+
+.menu-menu-principal-container{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 9998;
+
+    right: -100%;
+    top: 0;
+
+    max-width: 360px;
+    width: 100%;
+    height: 100vh;
+
+    background: white;
+
+    padding-top: 100px;
+
+    transition: 0.5s ease-in-out;
+}
+
+.menu-menu-principal-container>ul{
+    padding: 0;
+    margin: 0;
+}
+
+.menu-menu-principal-container>ul>li{
+    padding: 8px;
+    margin: 8px;
+    list-style: none;
+}
+
+.menu-menu-principal-container>ul>li>a{
+    padding: 8px;
+    margin: 0;
+}
+
+.menu--active{
+    right: 0;
 }
